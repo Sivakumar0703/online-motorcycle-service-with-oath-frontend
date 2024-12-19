@@ -1,0 +1,109 @@
+
+
+.homepage{
+    background-image: linear-gradient(to right, #d3cce3, #e9e4f0); 
+}
+
+.options{
+    margin-top: 10px;
+}
+
+
+.first-service , .second-service , .third-service {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+ }
+
+ .service-picture{
+    height:35vh;
+ }
+
+ .service-picture > img {
+    height: 100%;
+    width:100%;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 8px;
+ }
+
+ .service-btn{
+    margin: 10px 0; 
+ }
+
+ .service-name{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin:10px 0;
+ }
+
+ .about-service-image > img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+ }
+
+
+ /* card */
+
+ .about-card > ul{
+    list-style-type: none;
+    
+   }
+   
+   .about-card > ul > li:nth-child(1):before {
+       content: "○";
+       color: gold;
+       padding-right: 5px;
+   }
+   
+   .about-card > ul > li:nth-child(2):before {
+       content: "○";
+       color: greenyellow;
+       padding-right: 5px;
+   }
+   
+   .about-card > ul > li:nth-child(3):before {
+       content: "○";
+       color: red;
+       padding-right: 5px;
+   }
+   
+   .about-card > ul > li:nth-child(4):before {
+       content: "○";
+       color: aqua;
+       padding-right: 5px;
+   }
+   
+   .about-card{
+       background-color: black;
+       color: #ffffff;
+       display: inline-block;
+       padding: 15px;
+       margin: 10px;
+       border-radius: 8px;
+   }
+   
+   .about-title{
+       font-size: larger;
+       font-weight: bolder;
+   }
+   
+   .about-text{
+       color: #f5f5f5;
+   }
+   
+   .Qualitycheck-img > img {
+       height:100%;
+       width:100%;
+       object-fit: cover;
+   }
+   
+   .Qualitycheck-img{
+       height:60vh;
+       width:100vw;
+       margin: auto;
+   }

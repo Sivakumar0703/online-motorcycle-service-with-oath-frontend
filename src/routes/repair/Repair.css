@@ -1,0 +1,145 @@
+.header {
+    height: 20vh;
+    width: 100%;
+}
+
+.header>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.repair-booking {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.repair-service-page {
+    background: rgb(232, 48, 129);
+    background: linear-gradient(186deg, rgba(232, 48, 129, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.instructions {
+    margin: 15px 10px;
+    background-color: black;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.instructions-text {
+    padding: 15px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    align-items: center;
+}
+
+.form-filling {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.register-btn {
+    padding: 16.5px 14px;
+}
+
+.right {
+    margin-left: 15px;
+}
+
+.repair-img {
+    height: 60vh;
+    margin: auto;
+}
+
+.repair-img>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.details_and_instructions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pickup-img {
+    width: 80%;
+}
+
+
+/* prevent background color change while selecting values from autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+
+
+/* media query */
+/* @media (min-width: 576px) { 
+
+    .details_and_instructions{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+   
+
+    .form{
+        margin-top: 60px;
+    }
+
+}
+
+@media (min-width: 768px) { 
+
+    .instruction{
+        margin: 15px 10px;
+    width:auto;
+    background-color: black;
+    color: white;
+    padding:60px;
+    border-radius: 8px;
+    }
+
+    .details_and_instructions{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width: 992px) { 
+
+    .instruction{
+        margin: 15px 10px;
+    width:40vw;
+    background-color: black;
+    color: white;
+    padding:60px;
+    border-radius: 8px;
+    }
+
+    .details_and_instructions{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+
+ } */

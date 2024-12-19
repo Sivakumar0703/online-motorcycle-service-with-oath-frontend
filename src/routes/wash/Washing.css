@@ -1,0 +1,88 @@
+
+.info-1 , .info-2{
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    padding:15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top:20px;
+}
+
+.info-1 > p , .info-2>p {
+    color: white;
+    text-align: center;
+}
+
+.question{
+    font-size: larger;
+    font-weight: bolder; 
+}
+
+
+/* .bike-wash-img{
+    height: 50vh;
+    width:45%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+} */
+.bike-wash-img{
+    height: 50vh;
+    width:95%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.bike-wash-img > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.img-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .info-container{
+    height:50vh;
+    width:45%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} */
+.info-container{
+    height:50vh;
+    width:85%;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */ 
+    overflow: auto;
+}
+
+.washing-page{
+    background: #4CA1AF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media (min-width: 576px) { 
+
+    .info-container{
+        height:50vh;
+        width:45%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+       
+    }
+
+     .bike-wash-img{
+    height: 50vh;
+    width:45%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+} 
+
+ }
+

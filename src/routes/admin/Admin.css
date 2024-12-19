@@ -1,0 +1,61 @@
+
+.add-new-bike{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-bike-heading{
+    font-size: large;
+    font-weight: 800;
+    text-align: left;
+}
+
+/* stylings for admin price page */
+
+.price-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.price-page{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    
+}
+
+.price-page > p {
+    font-size: larger;
+    font-weight: bolder;
+ 
+    padding: 15px;
+}
+
+.price-label{
+    font-size: medium;
+    font-weight: bold;
+    color: darkmagenta;
+}
+
+.price-list > input{
+    margin: 5px 5px;
+}
+
+/* doughnut chart */
+.doughnutchart{
+    height:25vh;
+width:30vw;
+display: inline-block;
+}
+
+.linechart{
+    margin: 10px;
+    display: inline-block;
+}
+
+
+

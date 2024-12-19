@@ -1,0 +1,98 @@
+
+
+.user-detail{
+    background-color: aliceblue;
+}
+
+
+.profile-picture-container{
+    height:40vh;
+    /* width:100vw; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
+}
+
+.picture{
+    height:35vh;
+    /* width:35vw; */
+    
+}
+
+.picture > img {
+    height:100%;
+    width:100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.upload-button{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+
+ p{
+   margin-top: 1rem;
+   margin-top: 1rem;
+}
+
+.user-detail-row{
+    display:flex;
+    flex-direction: row;
+}
+
+.label{
+    background-color: purple;
+    color: white;
+    /* text-align: center; */
+    border:1px solid white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label>p , .label-right>p{
+    margin:0;
+    border:none;
+    padding:15px;
+}
+
+.label-right{
+    background-color: white;
+    color: purple;
+    border:1px solid purple;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-booking{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+color:white;
+font-weight: bold;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding:15px;
+}
+
+.forgotPassword{
+    display: block;
+    text-decoration: none;
+    text-align: right;
+   
+}

@@ -1,0 +1,75 @@
+
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    padding:5px;
+    
+    background-color: bisque;
+}
+
+.address{
+    display: block;
+    line-height: 200%;  
+}
+
+.contact{
+    margin: 5px 10px;
+}
+
+.anchor{
+    text-decoration: none;
+    display: block;
+    color:black;
+    line-height: 200%;
+    
+}
+
+/* footer-content : to order the anchor tags in column-wise*/
+.footer-content{
+    display: block;
+    line-height: 200%;
+    margin:5px 10px;
+    /* flex-direction: column; */
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.address , .social , .company , .contact{
+    margin-bottom: 5px;
+}
+
+/* hover effect on social and company content in footer */
+
+.anchor:hover{
+    margin-left: 3px;
+}
+
+/* media query */
+
+@media (min-width: 576px) { 
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+
+@media (min-width: 768px) { 
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+ }

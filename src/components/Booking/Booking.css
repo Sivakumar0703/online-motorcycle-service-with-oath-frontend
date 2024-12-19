@@ -1,0 +1,22 @@
+
+.left , .right{
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.form-filling{
+    height:auto;
+    
+}
+
+.error-msg{
+    margin-bottom: 0;
+}
+
+form{
+    background-color: transparent !important;
+}
+
+.row{
+    --bs-gutter-x: 0rem !important;
+}
