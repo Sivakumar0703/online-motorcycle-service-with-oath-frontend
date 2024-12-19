@@ -151,7 +151,7 @@ const Register = () => {
           <button className='btn btn-primary mb-3 register-btn' type='submit'>REGISTER</button> 
 
           <div>
-            <a href='http://localhost:8000/users/auth/google'>
+            <a href={`${url}/users/auth/google`}>
               <img className='oauth' src={google} alt='google' /> 
             </a> 
           </div>

@@ -152,7 +152,7 @@ const Login = () => {
                 <a className='no-account ml-2' href='/signup'> Don't have an account? click here </a> <br /> 
 
                 <div>
-                <a href='http://localhost:8000/users/auth/google'>
+                <a href={`${url}/users/auth/google`}>
                     <img className='oauth' src={google} alt='google' />  {/* onClick={loginWithGoogle} */}
                 </a>
                 </div>
