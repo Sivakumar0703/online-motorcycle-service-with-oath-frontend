@@ -45,7 +45,7 @@ function CollapsibleExample() {
           <Nav className="mr-auto">
             {/*  */}
             {user ?
-              <NavDropdown title={user.userName.toUpperCase()} id="collasible-nav-dropdown">
+              <NavDropdown title={user.userName?.toUpperCase()} id="collasible-nav-dropdown">
                 {role === 'admin' ? <NavDropdown.Item href="admin/dashboard">Admin Panel</NavDropdown.Item> : ''
                 }            <NavDropdown.Item href="/">Home</NavDropdown.Item>
                 <NavDropdown.Item href="/profile">

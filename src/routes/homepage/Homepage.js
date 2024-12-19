@@ -37,6 +37,7 @@ const Homepage = () => {
 
   async function getUserDataFromGoogle(){
     try {
+      console.log('url',url)
       const dataFromCookie = await axios.get(`${url}/users/access_user_data` , {
         method: 'GET',
         withCredentials:true,
