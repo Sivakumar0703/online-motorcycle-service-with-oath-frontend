@@ -11,9 +11,31 @@
   background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
 }
 
-.oauth{
-  height:3vw;
-  width:10vw;
-  cursor: pointer;
-  margin:5px;
+
+#social-media-login-container{
+  display: flex;
+  gap:30px;
+  margin-bottom: 10px;
 }
+
+
+.social-media-login-icon{
+  height:40px;
+  width:40px;
+  padding:5px;
+  cursor: pointer;
+  border:2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.social-media-login-icon > a > img {
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.social-media-login-icon:hover { transform: scale(1.5); }

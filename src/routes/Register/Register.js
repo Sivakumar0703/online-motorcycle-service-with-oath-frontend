@@ -11,7 +11,8 @@ import { useFormik } from 'formik';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons';
 import { BikeState } from '../../context/Context';
-import google from "../../assets/google-signin.png"
+import google from "../../assets/google-logo.png"
+import github from "../../assets/github-logo.png"
 
 
 
@@ -150,11 +151,29 @@ const Register = () => {
 
           <button className='btn btn-primary mb-3 register-btn' type='submit'>REGISTER</button> 
 
-          <div>
+          <h1>OR</h1>
+
+          <p>CONTINUE WITH </p>
+
+          
+
+          <div id='social-media-login-container'>
+            {/* google */}
+            <div className='social-media-login-icon'>
             <a href={`${url}/users/auth/google`}>
-              <img className='oauth' src={google} alt='google' /> 
+              <img  src={google} alt='google' /> 
             </a> 
           </div>
+
+          {/* github */}
+          <div className='social-media-login-icon'>
+            <a href={`${url}/users/auth/github`}>
+              <img  src={github} alt='github' /> 
+            </a> 
+          </div>
+
+           </div>
+
 
         </form>
 

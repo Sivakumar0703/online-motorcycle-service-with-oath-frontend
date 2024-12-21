@@ -10,6 +10,7 @@ import Footer from '../../components/Footer/Footer';
 import { toast } from 'react-toastify';
 import Loading from '../../components/Loading/Loading';
 
+
 const Profilepic = () => {
 
   const [image, setImage] = useState();
@@ -18,9 +19,10 @@ const Profilepic = () => {
   const { users, bookings, url } = BikeState();
   const [userData, setUserData] = useState();
   const [booking, setBooking] = useState([]);
-  const [isGoogleProfileImage , setIsGoogleProfileImage] = useState(null);
+  const [isFromSocialmedia , setIsFromSocialmedia] = useState(null);
 
   const email = JSON.parse(localStorage.getItem('user')).email;
+  console.log('email',email);
 
   function handleChange(e) {
     setImage(e.target.files[0]);
@@ -46,12 +48,14 @@ const Profilepic = () => {
 
     async function getdata() {
 
-     await axios.get(`${url}/image`)
+     await axios.get(`${url}/image` , {
+      withCredentials:true
+     })
         .then(res => {
           res.data.result && res.data.result.map((i) => {
             if(i.email === email){
               setShowImage(i.image);
-              setIsGoogleProfileImage(i.isGoogleImage)
+              setIsFromSocialmedia(i.isFromSocialmedia)
             }
           })
         })
@@ -84,8 +88,8 @@ const Profilepic = () => {
         {/* profile picture */}
         <div className='profile-picture-container col-12'>
           <div className='picture col-11 col-md-4'>
-            {console.log('img',showImage , typeof showImage)}
-            <img src={ isGoogleProfileImage ? showImage :`${url}/images/${showImage}`} alt="profile"  />
+            {console.log(isFromSocialmedia,'img',showImage , typeof showImage)}
+            <img src={ isFromSocialmedia ? showImage :`${url}/images/${showImage}`} alt="profile"  />
           </div>
         </div>
 
@@ -115,7 +119,7 @@ const Profilepic = () => {
 
                       <div className='user-detail-row col-12 col-md-6'>
                         <div className='label col-6'><p>EMAIL</p></div>
-                        <div className='label-right col-6'><p>{item.email}</p></div>
+                        <div className='label-right col-6'><p style={{wordBreak:'break-all'}}>{item.email}</p></div>
                       </div>
 
                       <div className='user-detail-row col-12 col-md-6'>

@@ -37,17 +37,15 @@ const Homepage = () => {
 
   async function getUserDataFromGoogle(){
     try {
-      console.log('url',url)
       const dataFromCookie = await axios.get(`${url}/users/access_user_data` , {
-        method: 'GET',
         withCredentials:true,
       });
-
-      if(dataFromCookie.data.success){
+      const isUserDataAvailableInLocal = localStorage.getItem('user')
+      if(dataFromCookie.data.success && !isUserDataAvailableInLocal){
         localStorage.setItem('user',JSON.stringify(dataFromCookie.data.user)); 
       }
     } catch (error) {
-      console.log(error.response.data.message);
+      console.log(error.response?.data?.message);
     }
   }
 

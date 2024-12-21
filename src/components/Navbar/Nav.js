@@ -13,15 +13,19 @@ import axios from 'axios';
 
 function CollapsibleExample() {
 
-  const user = JSON.parse(localStorage.getItem('user'));
-  const role = JSON.parse(localStorage.getItem('user'))?.role;
-  const navigate = useNavigate();
-  const {url} = BikeState();
+const user = JSON.parse(localStorage.getItem('user'));
+const role = JSON.parse(localStorage.getItem('user'))?.role;
+const navigate = useNavigate();
+const {url} = BikeState();
+
 
   async function logout() {
     try {
-      localStorage.removeItem('user');
-      await axios.get(`${url}/users/logout`);
+      localStorage.clear();
+      sessionStorage.clear();
+      await axios.post(`${url}/users/logout` , {} , {
+        withCredentials:true
+      });
       navigate('/')
     } catch (error) {
       console.log(error);
