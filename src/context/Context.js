@@ -12,8 +12,8 @@ const MyContext = ({ children }) => {
   const [bookings, setBookings] = useState();
   const [users, setUsers] = useState();
 
-  const url = 'https://moto-health-care.onrender.com';
-  // const url = 'http://localhost:8000';
+  // const url = 'https://moto-health-care.onrender.com';
+  const url = 'http://localhost:8000';
  
 
 

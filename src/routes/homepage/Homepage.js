@@ -39,7 +39,6 @@ const Homepage = () => {
     try {
       const dataFromCookie = await axios.get(`${url}/users/access_user_data` , {
         withCredentials:true,
-        headers: { "Content-Type": "application/json", "Access-Control-Allow-Credentials": true}
       });
       const isUserDataAvailableInLocal = localStorage.getItem('user')
       if(dataFromCookie.data.success && !isUserDataAvailableInLocal){
