@@ -52,8 +52,8 @@ const Homepage = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        // credentials: 'include',
-        withCredentials:true
+        credentials: 'include',
+        // withCredentials:true
     });
       const isUserDataAvailableInLocal = localStorage.getItem('user')
       if(dataFromCookie.data.success && !isUserDataAvailableInLocal){
