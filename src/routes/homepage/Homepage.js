@@ -49,15 +49,14 @@ const Homepage = () => {
   async function getUserDataFromGoogle(){
     try {
 
-      /*
+     
       const dataFromCookie = await axios.get(`${url}/users/access_user_data` , {   
         headers: {
           'Content-Type': 'application/json',
         },
-        credentials: 'include',
-        // withCredentials:true
+        withCredentials:true
     });
-    */
+     /*
       const dataFromCookie = await fetch(`${url}/users/access_user_data`, {
       method: 'GET',
       headers: {
@@ -65,6 +64,7 @@ const Homepage = () => {
       },
       withCredentials: 'include', // Ensures cookies are sent with the request
       });
+      */
 
 
 
