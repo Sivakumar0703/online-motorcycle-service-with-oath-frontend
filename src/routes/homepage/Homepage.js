@@ -35,10 +35,17 @@ const Homepage = () => {
    user ? navigate('/repair') : alert('Please Login')
   }
 
+  /*
+  {
+    credentials: 'include' // Ensures cookies are sent with the request
+}
+  */
+
   async function getUserDataFromGoogle(){
     try {
       const dataFromCookie = await axios.get(`${url}/users/access_user_data` , {
-        withCredentials:true,
+        // withCredentials:true,
+        credentials: 'include'
       });
       const isUserDataAvailableInLocal = localStorage.getItem('user')
       if(dataFromCookie.data.success && !isUserDataAvailableInLocal){
