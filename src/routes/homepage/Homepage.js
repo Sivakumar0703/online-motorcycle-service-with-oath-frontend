@@ -63,7 +63,7 @@ const Homepage = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      credentials: 'include', // Ensures cookies are sent with the request
+      withCredentials: 'include', // Ensures cookies are sent with the request
       });
 
 
