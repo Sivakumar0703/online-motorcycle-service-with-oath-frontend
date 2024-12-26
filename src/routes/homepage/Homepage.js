@@ -48,6 +48,8 @@ const Homepage = () => {
 
   async function getUserDataFromGoogle(){
     try {
+
+      /*
       const dataFromCookie = await axios.get(`${url}/users/access_user_data` , {   
         headers: {
           'Content-Type': 'application/json',
@@ -55,6 +57,18 @@ const Homepage = () => {
         credentials: 'include',
         // withCredentials:true
     });
+    */
+      const dataFromCookie = await fetch(`${url}/users/access_user_data`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      credentials: 'include', // Ensures cookies are sent with the request
+      });
+
+
+
+
       const isUserDataAvailableInLocal = localStorage.getItem('user')
       if(dataFromCookie.data.success && !isUserDataAvailableInLocal){
         localStorage.setItem('user',JSON.stringify(dataFromCookie.data.user)); 
