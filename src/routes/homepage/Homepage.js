@@ -35,39 +35,11 @@ const Homepage = () => {
    user ? navigate('/repair') : alert('Please Login')
   }
 
-  /*
-  {
-    {
-    credentials: 'include',
-    headers: {
-      'Content-Type': 'application/json',
-    }
-}
-}
-  */
-
   async function getUserDataFromGoogle(){
     try {
-
-     
-      const dataFromCookie = await axios.get(`${url}/users/access_user_data` , {   
-        headers: {
-          'Content-Type': 'application/json',
-        },
+      const dataFromCookie = await axios.get(`${url}/users/access_user_data` , {
         withCredentials:true
-    });
-     /*
-      const dataFromCookie = await fetch(`${url}/users/access_user_data`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      withCredentials: 'include', // Ensures cookies are sent with the request
-      });
-      */
-
-
-
+      })
 
       const isUserDataAvailableInLocal = localStorage.getItem('user')
       if(dataFromCookie.data.success && !isUserDataAvailableInLocal){
